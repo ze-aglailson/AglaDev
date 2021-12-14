@@ -18,11 +18,11 @@ class Home extends Page{
 
         //VIEW DA HOME
         $content =  View::render('pages/home', [
-            'name'=> $obOrganization->name,
+            'name'=> 'jdskjfkjlsdflgkjhkfgdkghk',
         ]);
 
         //RETORNA A PÁGINA
 
-        return parent::getPage('HOME > AGLADEV', $content);
+        return parent::getPage('Home | AglaDev', $content);
      }
 }

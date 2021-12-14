@@ -122,7 +122,7 @@ class Page{
      */
     public static function getFooter(){
         return View::render('pages/footer',[
-            'copy'=>'AglaDev - 2021 Aprendendo MVC com WDEV1!!'
+            'copy'=>'&copy;AglaDev - 2021 Todos os direitos reservados!'
         ]);
     }
 
