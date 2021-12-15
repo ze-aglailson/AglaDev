@@ -5,19 +5,19 @@ namespace App\Controller\Pages;
 use \App\Utils\View;
 use \App\Model\Entity\Organization;
 
-class About extends Page{
+class Orcamento extends Page{
 
     /**
-     * Método responsável por retornar o conteudo (view) da página sobre
+     * Método responsável por retornar o conteudo (view) da página de orçamento
      * @return string
      */
 
-     public static function getAbout(){
+     public static function getOrcamento(){
         //ORGANIZAÇÃO
         $obOrganization = new Organization;
 
         //VIEW DA HOME
-        $content =  View::render('pages/about', [
+        $content =  View::render('pages/orcamento', [
             'name'=> $obOrganization->name,
             'descricao'=>$obOrganization->description,
             'site'=> $obOrganization->site
@@ -25,6 +25,6 @@ class About extends Page{
 
         //RETORNA A PÁGINA
 
-        return parent::getPage('SOBRE > AGLADEV', $content);
+        return parent::getPage('Orçamento | AglaDev', $content);
      }
 }

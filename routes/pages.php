@@ -15,12 +15,12 @@ $obRouter->get('/', [
 ]);
 
 //ROTA SOBRE
-$obRouter->get('/sobre', [
+$obRouter->get('/orcamento', [
     'middlewares'=>[
         'cache'
     ],
     function(){
-        return new Response(200,Pages\About::getAbout());
+        return new Response(200,Pages\Orcamento::getOrcamento());
     }
 ]);
 
