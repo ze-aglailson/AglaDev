@@ -1,0 +1,30 @@
+[pagina="orcamento"]{ //Seletor do cabeçalho na pagina de orçamento
+    background-color: #2e5678;
+    .content-logo-btn-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: #0af;
+                span{
+                    color: #FFF;
+                }
+            }
+        }
+
+        .btn-menu{
+            display: none;
+        }
+
+    }
+    .content-menu{
+        display: none;
+    }
+}

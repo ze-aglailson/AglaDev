@@ -1,0 +1,29 @@
+[pagina=orcamento] {
+  background-color: #2e5678;
+}
+[pagina=orcamento] .content-logo-btn-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+[pagina=orcamento] .content-logo-btn-menu .logo {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+[pagina=orcamento] .content-logo-btn-menu .logo a {
+  color: #0af;
+}
+[pagina=orcamento] .content-logo-btn-menu .logo a span {
+  color: #FFF;
+}
+[pagina=orcamento] .content-logo-btn-menu .btn-menu {
+  display: none;
+}
+[pagina=orcamento] .content-menu {
+  display: none;
+}
+
+/*# sourceMappingURL=pagina-orcamento.css.map */

@@ -6,10 +6,13 @@ window.addEventListener('load', function(){
 
     //A primeira section do grid principal deve ter um padding-top para descontar a altura do cabecalho
 
-    let primaryChild =  gridPrincipal.children[0]
+    //let primaryChild =  gridPrincipal.children[0]
 
-    primaryChild.style.paddingTop = alturaCabecalho+'px'
+    //primaryChild.style.paddingTop = alturaCabecalho+'px'
 
+    document.querySelectorAll('.padding-cabecalho').forEach(e=>{
+        e.style.paddingTop = alturaCabecalho+'px'
+    })
 
 
 //Eventos de scroll

@@ -23,6 +23,6 @@ class Home extends Page{
 
         //RETORNA A PÁGINA
 
-        return parent::getPage('Home | AglaDev', $content);
+        return parent::getPage('Home | AglaDev','home',$content);
      }
 }

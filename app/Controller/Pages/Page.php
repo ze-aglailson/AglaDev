@@ -8,12 +8,14 @@ class Page{
 
     /**
      * Método responsável por retornar o topo da página renderizado
-     * @param  
+     * @param $pagina página que será renderizada 
      * @param 
      * @return string
      */
-    public static function getHeader(){
-        return View::render('pages/header');
+    public static function getHeader($pagina){
+        return View::render('pages/header',[
+            'pagina'=>$pagina
+        ]);
     }
 
     /**
@@ -130,15 +132,16 @@ class Page{
     /**
      * Método responsável por retornar o conteudo (view) da nossa página géneria
      * @param $title   titulo da página
+     * @param $pagina  página que será renderizada
      * @param $content conteudo da página
      * @return string
      */
 
-     public static function getPage($title, $content){
+     public static function getPage($title,$pagina,$content){
 
         return View::render('pages/page', [
             'title'   =>$title,
-            'header'  =>self::getHeader(),
+            'header'  =>self::getHeader($pagina),
             'content' =>$content,
             'footer'  =>self::getFooter()
         ]);

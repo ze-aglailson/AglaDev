@@ -25,6 +25,6 @@ class Orcamento extends Page{
 
         //RETORNA A PÁGINA
 
-        return parent::getPage('Orçamento | AglaDev', $content);
+        return parent::getPage('Orçamento | AglaDev','orcamento',$content);
      }
 }
