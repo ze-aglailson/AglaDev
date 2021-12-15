@@ -1,7 +1,17 @@
 .section-home {
-  background-color: #ff6b81;
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-home/fim-section-home;
+  position: relative;
+}
+.section-home .background-section-home {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=section-home.css.map */

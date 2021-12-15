@@ -1,6 +1,17 @@
 @use 'v';
 .section-home{
-    background-color: v.$cor-primaria;
     grid-column: inicio-left / fim-rigth;
     grid-row:inicio-section-home / fim-section-home ;
+    position: relative;
+
+    .background-section-home{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position:center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
