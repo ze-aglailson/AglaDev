@@ -122,7 +122,7 @@ class Page{
      */
     public static function getFooter(){
         return View::render('pages/footer',[
-            'copy'=>'&copy;AglaDev - 2021 Todos os direitos reservados!'
+            'copy'=>'AglaDev - Todos os direitos reservados - 2021&copy;'
         ]);
     }
 
