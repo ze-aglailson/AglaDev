@@ -12,9 +12,11 @@
 }
 .container-principal .section .header-section .title {
   text-transform: uppercase;
+  font-size: 1.3em;
 }
 .container-principal .section .header-section .title, .container-principal .section .header-section .subtitle {
   color: #2e5678;
+  text-align: center;
 }
 .container-principal .section .header-section .divisor-title {
   width: 100%;
