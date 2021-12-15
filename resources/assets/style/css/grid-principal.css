@@ -4,6 +4,25 @@
   grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
   grid-template-rows: [inicio-section-home] min(100vh) [fim-section-home] 10px [inicio-section-servicos] min(100vh) [fim-section-servicos] 10px [inicio-section-precos] min(100vh) [fim-section-precos] 10px [inicio-section-sobre] min(100vh) [fim-section-sobre] 10px [inicio-section-time] min(100vh) [fim-section-time] 10px [inicio-section-contato] min(100vh) [fim-section-contato] 10px;
 }
+.container-principal .section .header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-principal .section .header-section .title {
+  text-transform: uppercase;
+}
+.container-principal .section .header-section .title, .container-principal .section .header-section .subtitle {
+  color: #2e5678;
+}
+.container-principal .section .header-section .divisor-title {
+  width: 100%;
+  height: 23px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 5px 0;
+}
 
 .contente-btn-volta-topo {
   position: fixed;
