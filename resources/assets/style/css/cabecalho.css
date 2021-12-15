@@ -8,7 +8,7 @@
 
 .container-cabecalho {
   width: 100%;
-  padding: 15px 30px;
+  padding: 12px;
   position: fixed;
   z-index: 2;
 }
@@ -25,10 +25,16 @@
   align-items: center;
 }
 .container-cabecalho .content-logo-btn-menu .logo a {
-  color: #FFFFFF;
+  color: #0af;
+}
+.container-cabecalho .content-logo-btn-menu .logo a span {
+  color: #FFF;
 }
 .container-cabecalho .content-logo-btn-menu .logo-escuro a {
-  color: #333333;
+  color: #0af;
+}
+.container-cabecalho .content-logo-btn-menu .logo-escuro a span {
+  color: #2e5678;
 }
 .container-cabecalho .content-logo-btn-menu .btn-menu {
   width: 25px;
@@ -50,7 +56,7 @@
   transition: 0.3s;
 }
 .container-cabecalho .content-logo-btn-menu .btn-menu-escuro .linha-btn {
-  background-color: #333333;
+  background-color: #2e5678;
 }
 .container-cabecalho .content-logo-btn-menu .btn-menu-aberto {
   justify-content: center;

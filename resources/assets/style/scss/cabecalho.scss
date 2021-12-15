@@ -11,7 +11,7 @@
 
 .container-cabecalho{
     width: 100%;
-    padding: v.$padding-container;
+    padding: 12px;
     position: fixed;
     z-index: 2;
 
@@ -27,13 +27,19 @@
             justify-content: center;
             align-items: center;
             a{
-                color: v.$cor-branco;
+                color: #0af;
+                span{
+                    color: #FFF;
+                }
             }
         }
 
         .logo-escuro{
             a{
-                color: v.$cor-secundaria;
+                color: #0af;
+                span{
+                    color: #2e5678;
+                }
             }
         }
 
@@ -60,7 +66,7 @@
         .btn-menu-escuro{
             
             .linha-btn{
-                background-color: v.$cor-secundaria;
+                background-color: #2e5678;
             }
         }
 
