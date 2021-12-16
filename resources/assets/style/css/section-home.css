@@ -21,15 +21,15 @@
   left: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
 }
 .section-home .background-section-home .box-titles-btn-acao .titles {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  margin-top: 90px;
+  flex: 1;
 }
 .section-home .background-section-home .box-titles-btn-acao .titles .title {
   color: #FFF;
@@ -43,7 +43,9 @@
   text-align: center;
 }
 .section-home .background-section-home .box-titles-btn-acao .btn-acao {
-  margin-bottom: 60px;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 .section-home .background-section-home .box-titles-btn-acao .btn-acao button {
   border: none;
