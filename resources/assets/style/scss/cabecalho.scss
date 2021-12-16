@@ -132,6 +132,29 @@
                 background-color: #2e5678;
             }
         }
+        .ul-items-midias{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            li.item-midia{
+                flex: 1;
+                a.icon{
+                    display: block;
+                    text-align: center;
+                    font-size: 1.4em;
+                    padding: 5px 0;
+                }
+                a.icon:hover{
+                    background-color: #eee;
+                }
+            }
+            li.item-midia a.icon-facebook{color: #4164ac;}
+            li.item-midia a.icon-instagram{color: #f24d57;}
+            li.item-midia a.icon-whatsapp{color: #00e676;}
+        }
     }
 }
 
@@ -218,6 +241,7 @@
                     text-decoration: underline;
                 }
             }
+            .ul-items-midias{display: none;}
         }
     }
 }

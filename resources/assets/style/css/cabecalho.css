@@ -117,6 +117,35 @@
   color: #FFFFFF;
   background-color: #2e5678;
 }
+.content-menu .menu-principal .ul-items-midias {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content-menu .menu-principal .ul-items-midias li.item-midia {
+  flex: 1;
+}
+.content-menu .menu-principal .ul-items-midias li.item-midia a.icon {
+  display: block;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 5px 0;
+}
+.content-menu .menu-principal .ul-items-midias li.item-midia a.icon:hover {
+  background-color: #eee;
+}
+.content-menu .menu-principal .ul-items-midias li.item-midia a.icon-facebook {
+  color: #4164ac;
+}
+.content-menu .menu-principal .ul-items-midias li.item-midia a.icon-instagram {
+  color: #f24d57;
+}
+.content-menu .menu-principal .ul-items-midias li.item-midia a.icon-whatsapp {
+  color: #00e676;
+}
 
 .content-menu-aberto {
   top: 0;
@@ -171,6 +200,9 @@
     color: #FFFFFF;
     background-color: transparent;
     text-decoration: underline;
+  }
+  .content-menu .menu-principal .ul-items-midias {
+    display: none;
   }
 }
 
