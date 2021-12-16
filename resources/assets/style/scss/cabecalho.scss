@@ -22,25 +22,27 @@
         align-items: center;
 
         .logo{
+            z-index: 2;
+        }
+
+        .logo a{
+            display: block;
             width: 130px;
             height: 35px;
             background: url(../../img/sistema/logo-claro.png);
             background-position: center center;
             background-size: 130px;
             background-repeat: no-repeat;
-            z-index: 2;
-            font-size: 0;
         }
 
-        .logo-escuro{
+        .logo-escuro a{
+            display: block;
             width: 130px;
             height: 35px;
             background: url(../../img/sistema/logo-escuro.png);
             background-position: center center;
             background-size: 130px;
             background-repeat: no-repeat;
-            z-index: 2;
-            font-size: 0;;
         }
 
         .btn-menu{
