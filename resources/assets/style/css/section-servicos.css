@@ -10,7 +10,7 @@
 }
 .section-servicos .servicos .servico {
   width: 100%;
-  padding: 30px 20px;
+  padding: 20px;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -20,6 +20,7 @@
   background-color: #FFF;
 }
 .section-servicos .servicos .servico .link-servico {
+  padding: 20px 15px;
   display: flex;
   flex-direction: column;
   width: 100%;

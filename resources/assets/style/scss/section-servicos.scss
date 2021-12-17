@@ -8,7 +8,7 @@
         align-items: center;
         .servico{
             width: 100%;
-            padding: 30px 20px;
+            padding: 20px;
             border-radius: 3px;
             display: flex;
             flex-direction: column;
@@ -17,6 +17,7 @@
             margin-bottom: 30px;
             background-color: #FFF;
             .link-servico{
+                padding: 20px 15px;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
