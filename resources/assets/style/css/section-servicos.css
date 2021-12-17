@@ -29,11 +29,12 @@
 }
 .section-servicos .servicos .servico .link-servico span.icon-servico {
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 65px;
   background-position: center center;
-  background-size: 120px;
+  background-size: 60px;
   background-repeat: no-repeat;
+  margin-bottom: 15px;
 }
 .section-servicos .servicos .servico .link-servico .box-infos-servico {
   display: flex;

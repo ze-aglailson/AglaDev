@@ -99,20 +99,20 @@ a {
 }
 .container-cabecalho .content-logo-btn-menu .logo a {
   display: block;
-  width: 130px;
-  height: 35px;
+  width: 100px;
+  height: 30px;
   background: url(../../img/sistema/logo-claro.png);
   background-position: center center;
-  background-size: 130px;
+  background-size: 100px;
   background-repeat: no-repeat;
 }
 .container-cabecalho .content-logo-btn-menu .logo-escuro a {
   display: block;
-  width: 130px;
-  height: 35px;
+  width: 100px;
+  height: 30px;
   background: url(../../img/sistema/logo-escuro.png);
   background-position: center center;
-  background-size: 130px;
+  background-size: 100px;
   background-repeat: no-repeat;
 }
 .container-cabecalho .content-logo-btn-menu .btn-menu {
@@ -374,11 +374,12 @@ a {
 }
 .section-servicos .servicos .servico .link-servico span.icon-servico {
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 65px;
   background-position: center center;
-  background-size: 120px;
+  background-size: 60px;
   background-repeat: no-repeat;
+  margin-bottom: 15px;
 }
 .section-servicos .servicos .servico .link-servico .box-infos-servico {
   display: flex;

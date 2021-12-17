@@ -24,20 +24,20 @@
 }
 .container-cabecalho .content-logo-btn-menu .logo a {
   display: block;
-  width: 130px;
-  height: 35px;
+  width: 100px;
+  height: 30px;
   background: url(../../img/sistema/logo-claro.png);
   background-position: center center;
-  background-size: 130px;
+  background-size: 100px;
   background-repeat: no-repeat;
 }
 .container-cabecalho .content-logo-btn-menu .logo-escuro a {
   display: block;
-  width: 130px;
-  height: 35px;
+  width: 100px;
+  height: 30px;
   background: url(../../img/sistema/logo-escuro.png);
   background-position: center center;
-  background-size: 130px;
+  background-size: 100px;
   background-repeat: no-repeat;
 }
 .container-cabecalho .content-logo-btn-menu .btn-menu {
