@@ -1,18 +1,21 @@
 .section-servicos{
-    grid-column: inicio-temp/fim-temp;
+    grid-column: inicio-left/fim-rigth;
     grid-row:inicio-section-servicos/fim-section-servicos;
-
     .servicos{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         .servico{
+            width: 100%;
+            padding: 20px;
+            border-radius: 3px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin-bottom: 30px;
+            background-color: #FFF;
             .link-servico{
                 display: flex;
                 flex-direction: column;

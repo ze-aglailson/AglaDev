@@ -5,6 +5,10 @@
   font-family: "Open sans", sans-serif;
 }
 
+body {
+  background-color: #eee;
+}
+
 img {
   width: 100%;
 }

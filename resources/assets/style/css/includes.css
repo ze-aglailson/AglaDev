@@ -5,6 +5,10 @@
   font-family: "Open sans", sans-serif;
 }
 
+body {
+  background-color: #eee;
+}
+
 img {
   width: 100%;
 }
@@ -22,6 +26,9 @@ a {
   display: grid;
   grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
   grid-template-rows: [inicio-section-home] min(100vh) [fim-section-home] 10px [inicio-section-servicos] auto [fim-section-servicos] 10px [inicio-section-precos] min(100vh) [fim-section-precos] 10px [inicio-section-sobre] min(100vh) [fim-section-sobre] 10px [inicio-section-time] min(100vh) [fim-section-time] 10px [inicio-section-contato] min(100vh) [fim-section-contato] 10px;
+}
+.container-principal .section {
+  padding: 0 20px;
 }
 .container-principal .section .header-section {
   display: flex;
@@ -337,7 +344,7 @@ a {
 }
 
 .section-servicos {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-servicos/fim-section-servicos;
 }
 .section-servicos .servicos {
@@ -347,11 +354,15 @@ a {
   align-items: center;
 }
 .section-servicos .servicos .servico {
+  width: 100%;
+  padding: 20px;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  background-color: #FFF;
 }
 .section-servicos .servicos .servico .link-servico {
   display: flex;
