@@ -24,14 +24,19 @@
                 height: 100%;
                 align-items: center;
                 justify-content: center;
-                span.icon-servico{
-                    display: block;
+                .box-icon-servico{
                     width: 60px;
                     height: 65px;
-                    background-position: center center;
-                    background-size:60px;
-                    background-repeat: no-repeat;
-                    margin-bottom: 15px;
+                    span.icon-servico{
+                        display: block;
+                        width: 60px;
+                        height: 65px;
+                        background-position: center center;
+                        background-size:80%;
+                        background-repeat: no-repeat;
+                        margin-bottom: 15px;
+                        transition: .2s;
+                    }
                 }
                 .box-infos-servico{
                     display: flex;
@@ -42,6 +47,7 @@
                         font-size: 1.1em;
                         color: #2e5678;
                         margin-bottom: 20px;
+                        text-align: center;
                     }
                     .descricao-servico{
                         text-align: center;
@@ -51,6 +57,22 @@
                 }
             }
         }
+        .servico:hover .box-icon-servico span.icon-servico{
+            transform: scale(1.1);
+            transition: .2s;
+        }
     }
 }
 
+
+@media screen and (min-width: 740px) {
+    .section-servicos{
+        .servicos{
+            flex-direction: row;
+            justify-content: space-between;
+            .servico{
+                width: 30%;
+            }
+        }
+    }
+}

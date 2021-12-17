@@ -28,14 +28,19 @@
   align-items: center;
   justify-content: center;
 }
-.section-servicos .servicos .servico .link-servico span.icon-servico {
+.section-servicos .servicos .servico .link-servico .box-icon-servico {
+  width: 60px;
+  height: 65px;
+}
+.section-servicos .servicos .servico .link-servico .box-icon-servico span.icon-servico {
   display: block;
   width: 60px;
   height: 65px;
   background-position: center center;
-  background-size: 60px;
+  background-size: 80%;
   background-repeat: no-repeat;
   margin-bottom: 15px;
+  transition: 0.2s;
 }
 .section-servicos .servicos .servico .link-servico .box-infos-servico {
   display: flex;
@@ -47,11 +52,26 @@
   font-size: 1.1em;
   color: #2e5678;
   margin-bottom: 20px;
+  text-align: center;
 }
 .section-servicos .servicos .servico .link-servico .box-infos-servico .descricao-servico {
   text-align: center;
   color: #2e5678;
   font-size: 0.9em;
+}
+.section-servicos .servicos .servico:hover .box-icon-servico span.icon-servico {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+@media screen and (min-width: 740px) {
+  .section-servicos .servicos {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-servicos .servicos .servico {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=section-servicos.css.map */

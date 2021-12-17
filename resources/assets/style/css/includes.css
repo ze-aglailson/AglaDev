@@ -28,7 +28,7 @@ a {
   grid-template-rows: [inicio-section-home] min(100vh) [fim-section-home] 10px [inicio-section-servicos] auto [fim-section-servicos] 10px [inicio-section-precos] min(100vh) [fim-section-precos] 10px [inicio-section-sobre] min(100vh) [fim-section-sobre] 10px [inicio-section-time] min(100vh) [fim-section-time] 10px [inicio-section-contato] min(100vh) [fim-section-contato] 10px;
 }
 .container-principal .section {
-  padding: 0 20px;
+  padding: 0 10%;
 }
 .container-principal .section .header-section {
   display: flex;
@@ -73,6 +73,26 @@ a {
   align-items: center;
 }
 
+@media screen and (min-width: 520px) {
+  .container-principal .section {
+    padding: 0 15%;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container-principal .section {
+    padding: 0 18%;
+  }
+}
+@media screen and (min-width: 740px) {
+  .container-principal .section {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-principal .section {
+    padding: 0 10%;
+  }
+}
 .paraliza-body {
   overflow: hidden;
 }
@@ -280,6 +300,11 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 1280px) {
+  .container-cabecalho {
+    padding: 6px 10%;
+  }
+}
 .section-home {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-home/fim-section-home;
@@ -373,14 +398,19 @@ a {
   align-items: center;
   justify-content: center;
 }
-.section-servicos .servicos .servico .link-servico span.icon-servico {
+.section-servicos .servicos .servico .link-servico .box-icon-servico {
+  width: 60px;
+  height: 65px;
+}
+.section-servicos .servicos .servico .link-servico .box-icon-servico span.icon-servico {
   display: block;
   width: 60px;
   height: 65px;
   background-position: center center;
-  background-size: 60px;
+  background-size: 80%;
   background-repeat: no-repeat;
   margin-bottom: 15px;
+  transition: 0.2s;
 }
 .section-servicos .servicos .servico .link-servico .box-infos-servico {
   display: flex;
@@ -392,13 +422,27 @@ a {
   font-size: 1.1em;
   color: #2e5678;
   margin-bottom: 20px;
+  text-align: center;
 }
 .section-servicos .servicos .servico .link-servico .box-infos-servico .descricao-servico {
   text-align: center;
   color: #2e5678;
   font-size: 0.9em;
 }
+.section-servicos .servicos .servico:hover .box-icon-servico span.icon-servico {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
 
+@media screen and (min-width: 740px) {
+  .section-servicos .servicos {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-servicos .servicos .servico {
+    width: 30%;
+  }
+}
 .section-precos {
   grid-column: inicio-temp/fim-temp;
   grid-row: inicio-section-precos/fim-section-precos;
