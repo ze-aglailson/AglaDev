@@ -2,5 +2,15 @@
   grid-column: inicio-temp/fim-temp;
   grid-row: inicio-section-sobre/fim-section-sobre;
 }
+.section-sobre .parceiros {
+  width: 100%;
+}
+.section-sobre .parceiros .owl-carousel .item {
+  display: flex;
+  justify-content: center;
+}
+.section-sobre .parceiros .owl-carousel .item img {
+  width: 80%;
+}
 
 /*# sourceMappingURL=section-sobre.css.map */

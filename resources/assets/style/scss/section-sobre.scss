@@ -2,5 +2,18 @@
 .section-sobre{
     grid-column: inicio-temp/fim-temp;
     grid-row:inicio-section-sobre/fim-section-sobre;
+
+    .parceiros{
+        width: 100%;
+        .owl-carousel{
+            .item{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
 

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{URL}}/resources/assets/style/css/includes.css">
+    <!-- Librarias -->
+    <link rel="stylesheet" href="{{URL}}/resources/assets/lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{URL}}/resources/assets/lib/owlCarousel/dist/assets/owl.theme.default.min.css">
     <script src="{{URL}}/resources/assets/js/cabecalho.js"></script>
     <script src="{{URL}}/resources/assets/js/main.js"></script>
     <link rel="shortcut icon" href="{{URL}}/resources/assets/img/icon.png" type="image/x-icon">
@@ -19,6 +22,37 @@
     {{content}}
 
 	{{footer}}
-    
+    <!-- jquery -->
+    <script src="{{URL}}/resources/assets/lib/jquery/jquery-3.6.0.min.js"></script>
+    <!-- OwlCarousel -->
+    <script src="{{URL}}/resources/assets/lib/owlCarousel/dist/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $(".owl-carousel").owlCarousel({
+                items:4,
+                loop:true,
+                dots:false,
+                autoplay:true,
+                autoplayTimeout:3000,
+                responsive:{
+                    0:{
+                        items: 1
+                    },
+                    520:{
+                        items:2
+                    },
+                    720:{
+                        items:3
+                    },
+                    1000:{
+                        items:4
+                    }
+                }
+            });
+
+        })
+    </script>
 </body>
 </html>
