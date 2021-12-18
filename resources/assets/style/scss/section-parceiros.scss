@@ -1,0 +1,21 @@
+
+.section-parceiros{
+    grid-column: inicio-left/fim-rigth;
+    grid-row:inicio-section-parceiros/fim-section-parceiros;
+    background-color: #FFF;
+
+    .parceiros{
+        width: 100%;
+        .owl-carousel{
+            .item{
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                background-position: center center;
+                background-size: 70%;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+.section-parceiros {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-section-parceiros/fim-section-parceiros;
+  background-color: #FFF;
+}
+.section-parceiros .parceiros {
+  width: 100%;
+}
+.section-parceiros .parceiros .owl-carousel .item {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  background-position: center center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=section-parceiros.css.map */
