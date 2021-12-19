@@ -391,6 +391,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .section-servicos .servicos .servico {
   width: 100%;
@@ -402,6 +403,7 @@ a {
   align-items: center;
   margin-bottom: 30px;
   background-color: #FFF;
+  transition: 0.2s;
 }
 .section-servicos .servicos .servico .link-servico {
   padding: 20px 15px;
@@ -415,6 +417,8 @@ a {
 .section-servicos .servicos .servico .link-servico .box-icon-servico {
   width: 60px;
   height: 65px;
+  transform: translateX(-50%);
+  transition: 0.4s ease-out;
 }
 .section-servicos .servicos .servico .link-servico .box-icon-servico span.icon-servico {
   display: block;
@@ -426,11 +430,21 @@ a {
   margin-bottom: 15px;
   transition: 0.2s;
 }
+.section-servicos .servicos .servico .link-servico .box-icon-servico-active {
+  transform: translateX(0);
+  transition: 0.4s ease-in;
+}
+.section-servicos .servicos .servico .link-servico .box-icon-servico-active span.icon-servico {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
 .section-servicos .servicos .servico .link-servico .box-infos-servico {
+  transform: translateX(80%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.4s ease-out;
 }
 .section-servicos .servicos .servico .link-servico .box-infos-servico .title-servico {
   font-size: 1.1em;
@@ -443,9 +457,9 @@ a {
   color: #2e5678;
   font-size: 0.9em;
 }
-.section-servicos .servicos .servico:hover .box-icon-servico span.icon-servico {
-  transform: scale(1.1);
-  transition: 0.2s;
+.section-servicos .servicos .servico .link-servico .box-infos-servico-active {
+  transform: translateX(0);
+  transition: 0.4s ease-in;
 }
 
 @media screen and (min-width: 740px) {

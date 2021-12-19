@@ -52,4 +52,32 @@ function voltaTopo(posicaoScrollAtual){
 
 }
 
+
+//Animações scroll lateral section serviços
+(function(){
+    var servicos = document.querySelectorAll('.servico')
+    var offset = window.innerHeight * 3 /4
+
+    function animaScroll(){
+        var docTop = window.scrollY
+        servicos.forEach(function(servico, indice){
+            var boxIcon = servico.querySelector('.box-icon-servico')
+            var boxInfos = servico.querySelector('.box-infos-servico')
+            var itemTop = servico.offsetTop
+            if(docTop > itemTop - offset){
+                boxInfos.classList.add('box-infos-servico-active')
+                boxIcon.classList.add('box-icon-servico-active')
+            }else{
+                boxInfos.classList.remove('box-infos-servico-active')
+                boxIcon.classList.remove('box-icon-servico-active')
+            }
+
+        })
+    }
+    animaScroll()
+    window.addEventListener('scroll', function(){
+        animaScroll()
+    })
+}())
+
 })
