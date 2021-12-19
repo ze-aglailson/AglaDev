@@ -26,6 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -44,9 +45,9 @@
      inkscape:window-height="704"
      id="namedview1536"
      showgrid="false"
-     inkscape:zoom="0.4609375"
-     inkscape:cx="-49.355932"
-     inkscape:cy="256"
+     inkscape:zoom="0.23046875"
+     inkscape:cx="162.79482"
+     inkscape:cy="-457.90295"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -55,5 +56,5 @@
      fill="currentColor"
      d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM160 368c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16V240c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v128zm96 0c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16V144c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v224zm96 0c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-64c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v64z"
      id="path1532"
-     style="fill:#2e567f;fill-opacity:0.94117647" />
+     style="fill:#00aaff;fill-opacity:1" />
 </svg>
