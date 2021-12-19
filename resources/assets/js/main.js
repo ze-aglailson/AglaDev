@@ -64,7 +64,7 @@ function voltaTopo(posicaoScrollAtual){
             var boxIcon = servico.querySelector('.box-icon-servico')
             var boxInfos = servico.querySelector('.box-infos-servico')
             var itemTop = servico.offsetTop
-            if(docTop > itemTop - offset){
+            if(docTop > itemTop - offset*1.2){
                 boxInfos.classList.add('box-infos-servico-active')
                 boxIcon.classList.add('box-icon-servico-active')
             }else{
