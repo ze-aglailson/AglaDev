@@ -54,7 +54,7 @@ function voltaTopo(posicaoScrollAtual){
 
 
 //Animações scroll lateral section serviços
-(function(){
+/* (function(){
     var servicos = document.querySelectorAll('.servico')
     var offset = window.innerHeight * 3 /4
 
@@ -78,6 +78,6 @@ function voltaTopo(posicaoScrollAtual){
     window.addEventListener('scroll', function(){
         animaScroll()
     })
-}())
+}()) */
 
 })
