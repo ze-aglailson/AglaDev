@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             background-color: #FFF;
-            padding: 12px;
+            padding: 20px 12px;
             border-radius: 8px;
             margin-bottom: 30px;
             .box-icon-servico{
@@ -22,7 +22,7 @@
                 justify-content: center;
                 margin-bottom: 20px;
                 .icon-servico{
-                    width: 100px;
+                    width: 120px;
                     height: 100px;
                     background-position: center center;
                     background-size: cover;
@@ -58,7 +58,7 @@
             flex-direction: row;
             justify-content: space-between;
             .servico{
-                //width: 30%;
+                width: 30%;
             }
         }
     }

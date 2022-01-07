@@ -399,7 +399,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #FFF;
-  padding: 12px;
+  padding: 20px 12px;
   border-radius: 8px;
   margin-bottom: 30px;
 }
@@ -410,7 +410,7 @@ a {
   margin-bottom: 20px;
 }
 .section-servicos .servicos .servico .box-icon-servico .icon-servico {
-  width: 100px;
+  width: 120px;
   height: 100px;
   background-position: center center;
   background-size: cover;
@@ -437,6 +437,9 @@ a {
   .section-servicos .servicos {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .section-servicos .servicos .servico {
+    width: 30%;
   }
 }
 .section-precos {
