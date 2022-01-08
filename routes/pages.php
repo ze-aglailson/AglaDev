@@ -9,8 +9,8 @@ $obRouter->get('/', [
     'middlewares'=>[
         'cache'
     ],
-    function(){
-        return new Response(200,Pages\Home::getHome());
+    function($request){
+        return new Response(200,Pages\Home::getHome($request));
     }
 ]);
 
