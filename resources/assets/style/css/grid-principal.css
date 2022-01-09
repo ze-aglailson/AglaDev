@@ -62,12 +62,34 @@
   background-image: url(../../img/separador-section-bottom.svg);
 }
 
-.contente-btn-volta-topo {
+.contente-btns-whatsapp-volta-topo {
   position: fixed;
-  right: 30px;
+  right: 10px;
   bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.contente-btn-volta-topo .btn-volta-top {
+.contente-btns-whatsapp-volta-topo .btn-whatsapp {
+  padding: 8px 10px;
+  margin-bottom: 10vh;
+}
+.contente-btns-whatsapp-volta-topo .btn-whatsapp button {
+  background: transparent;
+  border: none;
+}
+.contente-btns-whatsapp-volta-topo .btn-whatsapp button a.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 2em;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+}
+.contente-btns-whatsapp-volta-topo .btn-volta-top {
   padding: 8px 10px;
   border: 1px solid #FFFFFF;
   cursor: pointer;
@@ -75,11 +97,15 @@
   color: #FFFFFF;
   border-radius: 3px;
   display: none;
+  margin-top: 0;
+  transition: 0.3s;
 }
-.contente-btn-volta-topo .btn-volta-top-visivel {
+.contente-btns-whatsapp-volta-topo .btn-volta-top-visivel {
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
 }
 
 @media screen and (min-width: 520px) {
