@@ -53,22 +53,22 @@ a {
   margin: 5px 0;
   transform: translateY(-80%);
   opacity: 0.2;
-  animation: 1s;
+  animation: 1.3s ease-out;
 }
 .container-principal .section .header-section .subtitle {
   transform: translateY(-100%);
   opacity: 0.2;
-  animation: 1s;
+  animation: 1.3s ease-out;
 }
 .container-principal .section .header-active .divisor-title {
   transform: translateY(0);
   opacity: 1;
-  transition: 0.7s;
+  transition: 1.3s ease-in-out;
 }
 .container-principal .section .header-active .subtitle {
   transform: translateY(0);
   opacity: 1;
-  transition: 0.7s;
+  transition: 1.3s ease-in-out;
 }
 .container-principal .section-separador-parceiros-top {
   grid-column: inicio-left/fim-rigth;

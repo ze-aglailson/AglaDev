@@ -39,24 +39,24 @@
                 margin: 5px 0;
                 transform: translateY(-80%);
                 opacity: 0.2;
-                animation: 1s;
+                animation: 1.3s ease-out;
             }
             .subtitle{
                 transform: translateY(-100%);
                 opacity: .2;
-                animation: 1s;
+                animation: 1.3s ease-out;
             }
         }
         .header-active{
             .divisor-title{
                 transform: translateY(0);
                 opacity: 1;
-                transition: .7s;
+                transition: 1.3s ease-in-out;
             }
             .subtitle{
                 transform: translateY(0);
                 opacity: 1;
-                transition: .7s;
+                transition: 1.3s ease-in-out;
             }
         }
     }
