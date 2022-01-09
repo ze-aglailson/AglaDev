@@ -17,7 +17,7 @@ class Orcamento extends Page{
         $obOrganization = new Organization;
 
         //VIEW DA HOME
-        $content =  View::render('pages/orcamento', [
+        $content =  View::render('pages/orcamento/orcamento', [
             'name'=> $obOrganization->name,
             'descricao'=>$obOrganization->description,
             'site'=> $obOrganization->site
