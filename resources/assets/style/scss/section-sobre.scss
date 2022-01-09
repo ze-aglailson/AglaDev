@@ -1,8 +1,8 @@
 
 .section-sobre{
-    grid-column: inicio-temp/fim-temp;
+    grid-column: inicio-left/fim-rigth;
     grid-row:inicio-section-sobre/fim-section-sobre;
-
+    background-color: #FFF;
     .parceiros{
         width: 100%;
         .owl-carousel{

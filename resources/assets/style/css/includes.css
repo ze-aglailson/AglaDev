@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: #f3f3f3;
 }
 
 img {
@@ -109,9 +109,15 @@ a {
   .container-principal .section {
     padding: 0 15%;
   }
+  .container-principal .section .background-section {
+    padding: 0 15%;
+  }
 }
 @media screen and (min-width: 620px) {
   .container-principal .section {
+    padding: 0 18%;
+  }
+  .container-principal .section .background-section {
     padding: 0 18%;
   }
 }
@@ -119,9 +125,15 @@ a {
   .container-principal .section {
     padding: 0 30px;
   }
+  .container-principal .section .background-section {
+    padding: 0 30px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .container-principal .section {
+    padding: 0 10%;
+  }
+  .container-principal .section .background-section {
     padding: 0 10%;
   }
 }
@@ -349,6 +361,7 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
+  background-attachment: fixed;
   top: 0;
   left: 0;
 }
@@ -388,9 +401,11 @@ a {
 }
 .section-home .background-section-home .box-titles-btn-acao .btn-acao button {
   border: none;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .section-home .background-section-home .box-titles-btn-acao .btn-acao button a.btn-orcamento {
-  background-color: #0af;
+  background-color: #00aaff;
   color: #FFF;
   padding: 10px 20px;
   display: block;
@@ -398,6 +413,31 @@ a {
 }
 .section-home .background-section-home .box-titles-btn-acao .btn-acao button a.btn-orcamento:hover {
   border: 1px solid #FFF;
+  border-radius: 20px;
+}
+.section-home .background-section-home .box-titles-btn-acao .btn-whatsapp {
+  width: 100%;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.section-home .background-section-home .box-titles-btn-acao .btn-whatsapp button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.section-home .background-section-home .box-titles-btn-acao .btn-whatsapp button a.btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: #fff;
 }
 
 .section-servicos {
@@ -466,8 +506,9 @@ a {
 }
 
 .section-sobre {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-sobre/fim-section-sobre;
+  background-color: #FFF;
 }
 .section-sobre .parceiros {
   width: 100%;
