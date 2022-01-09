@@ -30,7 +30,7 @@ class Servico{
         $obPagination = new Pagination($quantidadeTotal, $paginaAtual, 3);
 
         //RESULTADO QUE SERÃO RENDERIZADOS
-        $result = EntityServico::getServicos(null, 'servicoCod DESC', $obPagination->getLimit());
+        $result = EntityServico::getServicos(null, 'servicoCod ASC', $obPagination->getLimit());
 
         //RENDERIZA OS ITENS
         while($obServico = $result->fetchObject(EntityServico::class)){
