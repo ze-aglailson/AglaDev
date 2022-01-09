@@ -51,7 +51,32 @@ function voltaTopo(posicaoScrollAtual){
     }
 
 }
+//Animação titulos sections
 
+(function(){
+    var headersSections = document.querySelectorAll('.header-section')
+    var offset = window.innerHeight * 3 / 4
+
+    function animaTitulo(){
+        var docTop = window.scrollY
+
+        headersSections.forEach(function(header, indice){
+            var separador = header.querySelector('.divisor-title')
+            var subtitulo = header.querySelector('.subtitle')
+            var headerTop = header.offsetTop
+
+            if(docTop > headerTop - offset * 1.2){
+                header.classList.add('header-active')
+            }else{
+                header.classList.remove('header-active')
+            }
+        })
+    }
+    animaTitulo()
+    window.addEventListener('scroll', function(){
+        animaTitulo()
+    })
+}())
 
 //Animações scroll lateral section serviços
 /* (function(){

@@ -37,6 +37,26 @@
                 background-position:center center;
                 background-repeat: no-repeat;
                 margin: 5px 0;
+                transform: translateY(-80%);
+                opacity: 0.2;
+                animation: 1s;
+            }
+            .subtitle{
+                transform: translateY(-100%);
+                opacity: .2;
+                animation: 1s;
+            }
+        }
+        .header-active{
+            .divisor-title{
+                transform: translateY(0);
+                opacity: 1;
+                transition: .7s;
+            }
+            .subtitle{
+                transform: translateY(0);
+                opacity: 1;
+                transition: .7s;
             }
         }
     }
