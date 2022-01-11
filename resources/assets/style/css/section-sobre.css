@@ -48,7 +48,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 .section-sobre .sobre .nosso-foco .links-itens li {
   width: 30%;
@@ -69,6 +68,9 @@
 }
 .section-sobre .sobre .nosso-foco .links-itens li .link-item-seguranca {
   background: #00aaff;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco {
+  margin-bottom: 20px;
 }
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item {
   width: 100%;

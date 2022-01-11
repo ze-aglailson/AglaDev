@@ -47,7 +47,6 @@
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 20px;
                 li{
                     width: 30%;
                     .link-item{
@@ -73,6 +72,7 @@
                 }
             }
             .owl-carousel-nosso-foco{
+                margin-bottom: 20px;
                 .item{
                     width: 100%;
                     display: flex;
