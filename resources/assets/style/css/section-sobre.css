@@ -33,12 +33,10 @@
   font-family: "Roboto";
   color: #2e5678;
   margin-bottom: 20px;
+  text-align: center;
 }
 .section-sobre .sobre .introducao .box-iformacoes .subtitle {
   color: #596f81;
-}
-.section-sobre .sobre .introducao .box-iformacoes .title, .section-sobre .sobre .introducao .box-iformacoes .subtitle {
-  text-align: center;
 }
 .section-sobre .sobre .nosso-foco {
   width: 100%;
