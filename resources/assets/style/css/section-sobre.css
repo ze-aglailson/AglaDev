@@ -15,7 +15,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   margin-bottom: 40px;
 }
 .section-sobre .sobre .introducao .box-imagem-ideia {
@@ -122,16 +121,19 @@
     margin-top: 30px;
   }
   .section-sobre .sobre .introducao {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
   .section-sobre .sobre .introducao .box-imagem-ideia {
     width: 30%;
     margin: 0;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
   }
   .section-sobre .sobre .introducao .box-iformacoes {
     align-self: flex-start;
     flex: 1;
-    padding: 20px;
+    padding-right: 20px;
   }
   .section-sobre .sobre .introducao .box-iformacoes .title, .section-sobre .sobre .introducao .box-iformacoes .subtitle {
     width: 100%;

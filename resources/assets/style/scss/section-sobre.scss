@@ -14,7 +14,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 10px;
             margin-bottom: 40px;
             .box-imagem-ideia{
                 width: 60%;
@@ -143,15 +142,18 @@
         .sobre{
             margin-top: 30px;
             .introducao{
-                flex-direction: row;
+                flex-direction: row-reverse;
                 .box-imagem-ideia{
                     width: 30%;
                     margin: 0;
+                    background: #eee;
+                    padding: 10px;
+                    border-radius: 10px;
                 }
                 .box-iformacoes{
                     align-self: flex-start;
                     flex: 1;
-                    padding: 20px;
+                    padding-right:20px;
                     .title, .subtitle{
                         width: 100%;
                         text-align: left;
