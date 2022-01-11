@@ -366,9 +366,9 @@ a {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-sobre/fim-section-sobre;
   background: #FFF;
-}
-.section-sobre h2.title {
-  padding-top: 30px;
+  /*     h2.title{
+          padding-top: 30px;
+      } */
 }
 .section-sobre .sobre {
   width: 100%;
@@ -405,6 +405,27 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 740px) {
+  .section-sobre .sobre {
+    margin-top: 30px;
+  }
+  .section-sobre .sobre .introducao {
+    flex-direction: row;
+  }
+  .section-sobre .sobre .introducao .box-imagem-ideia {
+    width: 30%;
+    margin: 0;
+  }
+  .section-sobre .sobre .introducao .box-iformacoes {
+    align-self: flex-start;
+    flex: 1;
+    padding: 20px;
+  }
+  .section-sobre .sobre .introducao .box-iformacoes .title, .section-sobre .sobre .introducao .box-iformacoes .subtitle {
+    width: 100%;
+    text-align: left;
+  }
+}
 .section-parceiros {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-parceiros/fim-section-parceiros;
@@ -464,7 +485,7 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
-  grid-template-rows: [inicio-section-home] min(100vh) [fim-section-home] 0px [inicio-section-sobre] min(100vh) [fim-section-sobre] 30px [inicio-section-servicos] auto [fim-section-servicos] 10px [inicio-separador-parceiros-top] 100px [fim-separador-parceiros-top] 0px [inicio-section-parceiros] auto [fim-section-parceiros] 0px [inicio-separador-parceiros-bottom] 100px [fim-separador-parceiros-bottom] 0px [inicio-section-precos] min(100vh) [fim-section-precos] 10px [inicio-section-time] min(100vh) [fim-section-time] 10px [inicio-section-contato] min(100vh) [fim-section-contato] 10px;
+  grid-template-rows: [inicio-section-home] min(100vh) [fim-section-home] 0px [inicio-section-sobre] auto [fim-section-sobre] 30px [inicio-section-servicos] auto [fim-section-servicos] 0px [inicio-separador-parceiros-top] 100px [fim-separador-parceiros-top] 0px [inicio-section-parceiros] auto [fim-section-parceiros] 0px [inicio-separador-parceiros-bottom] 100px [fim-separador-parceiros-bottom] 0px [inicio-section-precos] min(100vh) [fim-section-precos] 0px [inicio-section-time] min(100vh) [fim-section-time] 0px [inicio-section-contato] min(100vh) [fim-section-contato] 0px;
 }
 .container-principal .section {
   padding: 0 10%;
@@ -474,7 +495,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 .container-principal .section .header-section .title {
   text-transform: uppercase;

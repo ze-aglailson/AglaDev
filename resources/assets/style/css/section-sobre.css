@@ -2,9 +2,9 @@
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-sobre/fim-section-sobre;
   background: #FFF;
-}
-.section-sobre h2.title {
-  padding-top: 30px;
+  /*     h2.title{
+          padding-top: 30px;
+      } */
 }
 .section-sobre .sobre {
   width: 100%;
@@ -39,6 +39,28 @@
 }
 .section-sobre .sobre .introducao .box-iformacoes .title, .section-sobre .sobre .introducao .box-iformacoes .subtitle {
   text-align: center;
+}
+
+@media screen and (min-width: 740px) {
+  .section-sobre .sobre {
+    margin-top: 30px;
+  }
+  .section-sobre .sobre .introducao {
+    flex-direction: row;
+  }
+  .section-sobre .sobre .introducao .box-imagem-ideia {
+    width: 30%;
+    margin: 0;
+  }
+  .section-sobre .sobre .introducao .box-iformacoes {
+    align-self: flex-start;
+    flex: 1;
+    padding: 20px;
+  }
+  .section-sobre .sobre .introducao .box-iformacoes .title, .section-sobre .sobre .introducao .box-iformacoes .subtitle {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=section-sobre.css.map */

@@ -3,9 +3,9 @@
     grid-column: inicio-left/fim-rigth;
     grid-row:inicio-section-sobre/fim-section-sobre;
     background: #FFF;
-    h2.title{
+/*     h2.title{
         padding-top: 30px;
-    }
+    } */
     .sobre{
         width: 100%;
         .introducao{
@@ -36,6 +36,30 @@
                 }
                 .title, .subtitle{
                     text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .section-sobre{
+        .sobre{
+            margin-top: 30px;
+            .introducao{
+                flex-direction: row;
+                .box-imagem-ideia{
+                    width: 30%;
+                    margin: 0;
+                }
+                .box-iformacoes{
+                    align-self: flex-start;
+                    flex: 1;
+                    padding: 20px;
+                    .title, .subtitle{
+                        width: 100%;
+                        text-align: left;
+                    }
                 }
             }
         }
