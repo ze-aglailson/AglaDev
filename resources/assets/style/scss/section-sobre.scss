@@ -15,7 +15,7 @@
             justify-content: center;
             align-items: center;
             padding: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             .box-imagem-ideia{
                 width: 60%;
                 margin-bottom: 10px;
@@ -27,7 +27,7 @@
                 justify-content: center;
                 align-items: center;
                 .title{
-                    font-size: 1em;
+                    font-size: 1.1em;
                     font-family: 'Roboto' ;
                     color: #2e5678;
                     margin-bottom: 20px;
@@ -45,19 +45,92 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            padding-bottom: 20px;
             .links-itens{
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 20px;
                 li{
                     width: 30%;
                     .link-item{
                         display: block;
                         font-size: .8em;
                         padding:7px 10px;
-                        background: #00aaff;
                         color: #FFF;
                         border-radius: 5px;
+                        text-align: center;
+                    }
+                    .link-item-satisfacao{
+                        background: #0de36d;
+
+                    }
+                    .link-item-agilidade{
+                        background: #ff8000;
+
+                    }
+                    .link-item-seguranca{
+                        background: #00aaff;
+
+                    }
+                }
+            }
+            .owl-carousel-nosso-foco{
+                padding: 5px;
+                .item{
+                    width: 100%;
+                    display: flex;
+
+                    .box-icon{
+                        width: 30%;
+                        background: #0af;
+                        display: flex;
+                        align-items: center;
+                        padding: 4px 10px;
+                    }
+                    .box-info{
+                        flex: 1;
+                        padding: 2px 10px;
+
+                        .title{
+                            font-size: .9em;
+                            color: #0af;
+                            margin-bottom: 8px;
+                        }
+                        .subtitle{
+                            font-size: .8em;
+                            color: #596f81;
+                        }
+                    }
+                }
+                .item-satisfacao{
+                    .box-icon{
+                        background: #ccc;
+                    }
+                    .box-info{
+                        .title{
+                            color: #0de36d;
+                        }
+                    }
+                }
+                .item-agilidade{
+                    .box-icon{
+                        background: #ccc;
+                    }
+                    .box-info{
+                        .title{
+                            color: #ff8000;
+                        }
+                    }
+                }
+                .item-seguranca{
+                    .box-icon{
+                        background: #ccc;
+                    }
+                    .box-info{
+                        .title{
+                            color: #00aaff;
+                        }
                     }
                 }
             }
@@ -89,6 +162,7 @@
             .nosso-foco{
                 .links-itens{
                     display: none;
+                    
                 }
             }
             

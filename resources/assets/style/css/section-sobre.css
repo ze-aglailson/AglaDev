@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section-sobre .sobre .introducao .box-imagem-ideia {
   width: 60%;
@@ -30,7 +30,7 @@
   align-items: center;
 }
 .section-sobre .sobre .introducao .box-iformacoes .title {
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: "Roboto";
   color: #2e5678;
   margin-bottom: 20px;
@@ -45,11 +45,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 .section-sobre .sobre .nosso-foco .links-itens {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .section-sobre .sobre .nosso-foco .links-itens li {
   width: 30%;
@@ -58,9 +60,63 @@
   display: block;
   font-size: 0.8em;
   padding: 7px 10px;
-  background: #00aaff;
   color: #FFF;
   border-radius: 5px;
+  text-align: center;
+}
+.section-sobre .sobre .nosso-foco .links-itens li .link-item-satisfacao {
+  background: #0de36d;
+}
+.section-sobre .sobre .nosso-foco .links-itens li .link-item-agilidade {
+  background: #ff8000;
+}
+.section-sobre .sobre .nosso-foco .links-itens li .link-item-seguranca {
+  background: #00aaff;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco {
+  padding: 5px;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item {
+  width: 100%;
+  display: flex;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item .box-icon {
+  width: 30%;
+  background: #0af;
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item .box-info {
+  flex: 1;
+  padding: 2px 10px;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item .box-info .title {
+  font-size: 0.9em;
+  color: #0af;
+  margin-bottom: 8px;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item .box-info .subtitle {
+  font-size: 0.8em;
+  color: #596f81;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item-satisfacao .box-icon {
+  background: #ccc;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item-satisfacao .box-info .title {
+  color: #0de36d;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item-agilidade .box-icon {
+  background: #ccc;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item-agilidade .box-info .title {
+  color: #ff8000;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item-seguranca .box-icon {
+  background: #ccc;
+}
+.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item-seguranca .box-info .title {
+  color: #00aaff;
 }
 
 @media screen and (min-width: 720px) {
