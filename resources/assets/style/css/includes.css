@@ -437,9 +437,6 @@ a {
 .section-sobre .sobre .nosso-foco .links-itens li .link-item-seguranca {
   background: #00aaff;
 }
-.section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco {
-  padding: 5px;
-}
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item {
   width: 100%;
   display: flex;
@@ -456,12 +453,13 @@ a {
   padding: 2px 10px;
 }
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item .box-info .title {
-  font-size: 0.9em;
+  font-size: 1em;
   color: #0af;
   margin-bottom: 8px;
+  font-weight: normal;
 }
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item .box-info .subtitle {
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #596f81;
 }
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item-satisfacao .box-icon {
