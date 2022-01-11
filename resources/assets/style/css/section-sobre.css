@@ -1,17 +1,44 @@
 .section-sobre {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-sobre/fim-section-sobre;
-  background-color: #FFF;
+  background: #FFF;
 }
-.section-sobre .parceiros {
+.section-sobre h2.title {
+  padding-top: 30px;
+}
+.section-sobre .sobre {
   width: 100%;
 }
-.section-sobre .parceiros .owl-carousel .item {
+.section-sobre .sobre .introducao {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
-.section-sobre .parceiros .owl-carousel .item img {
-  width: 80%;
+.section-sobre .sobre .introducao .box-imagem-ideia {
+  width: 60%;
+  margin-bottom: 10px;
+}
+.section-sobre .sobre .introducao .box-iformacoes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-sobre .sobre .introducao .box-iformacoes .title {
+  font-size: 1em;
+  font-family: "Roboto";
+  color: #2e5678;
+  margin-bottom: 20px;
+}
+.section-sobre .sobre .introducao .box-iformacoes .subtitle {
+  color: #596f81;
+}
+.section-sobre .sobre .introducao .box-iformacoes .title, .section-sobre .sobre .introducao .box-iformacoes .subtitle {
+  text-align: center;
 }
 
 /*# sourceMappingURL=section-sobre.css.map */

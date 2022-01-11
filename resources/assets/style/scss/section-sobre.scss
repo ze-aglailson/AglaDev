@@ -2,15 +2,40 @@
 .section-sobre{
     grid-column: inicio-left/fim-rigth;
     grid-row:inicio-section-sobre/fim-section-sobre;
-    background-color: #FFF;
-    .parceiros{
+    background: #FFF;
+    h2.title{
+        padding-top: 30px;
+    }
+    .sobre{
         width: 100%;
-        .owl-carousel{
-            .item{
+        .introducao{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            .box-imagem-ideia{
+                width: 60%;
+                margin-bottom: 10px;
+            }
+            .box-iformacoes{
+                width: 100%;
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
-                img{
-                    width: 80%;
+                align-items: center;
+                .title{
+                    font-size: 1em;
+                    font-family: 'Roboto' ;
+                    color: #2e5678;
+                    margin-bottom: 20px;
+                }
+                .subtitle{
+                    color: #596f81;
+                }
+                .title, .subtitle{
+                    text-align: center;
                 }
             }
         }

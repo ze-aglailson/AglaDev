@@ -4,13 +4,13 @@
     display: grid;
     grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
     grid-template-rows: 
-                    [inicio-section-home] min(100vh) [fim-section-home]10px
+                    [inicio-section-home] min(100vh) [fim-section-home]0px
+                    [inicio-section-sobre] min(100vh) [fim-section-sobre]30px
                     [inicio-section-servicos] auto [fim-section-servicos]10px
                     [inicio-separador-parceiros-top] 100px [fim-separador-parceiros-top]0px
                     [inicio-section-parceiros] auto [fim-section-parceiros]0px
                     [inicio-separador-parceiros-bottom] 100px [fim-separador-parceiros-bottom]0px
                     [inicio-section-precos] min(100vh) [fim-section-precos]10px
-                    [inicio-section-sobre] min(100vh) [fim-section-sobre]0px
                     [inicio-section-time] min(100vh) [fim-section-time]10px
                     [inicio-section-contato] min(100vh) [fim-section-contato]10px
                     ;
