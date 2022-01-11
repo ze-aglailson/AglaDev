@@ -30,7 +30,7 @@
     <script type="text/javascript">
         $(document).ready(function(){
 
-            $(".owl-carousel").owlCarousel({
+            $(".owl-carousel-parceiros").owlCarousel({
                 items:4,
                 loop:true,
                 dots:false,
@@ -48,6 +48,22 @@
                     },
                     1000:{
                         items:4
+                    }
+                }
+            });
+
+            $(".owl-carousel-nosso-foco").owlCarousel({
+                items:4,
+                loop:false,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:3000,
+                responsive:{
+                    0:{
+                        items: 1
+                    },
+                    720:{
+                        items:3
                     }
                 }
             });

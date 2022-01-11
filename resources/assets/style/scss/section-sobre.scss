@@ -15,6 +15,7 @@
             justify-content: center;
             align-items: center;
             padding: 10px;
+            margin-bottom: 20px;
             .box-imagem-ideia{
                 width: 60%;
                 margin-bottom: 10px;
@@ -39,10 +40,32 @@
                 }
             }
         }
+
+        .nosso-foco{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .links-itens{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    width: 30%;
+                    .link-item{
+                        display: block;
+                        font-size: .8em;
+                        padding:7px 10px;
+                        background: #00aaff;
+                        color: #FFF;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 720px) {
     .section-sobre{
         .sobre{
             margin-top: 30px;
@@ -62,6 +85,13 @@
                     }
                 }
             }
+
+            .nosso-foco{
+                .links-itens{
+                    display: none;
+                }
+            }
+            
         }
     }
 }

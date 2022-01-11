@@ -380,6 +380,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  margin-bottom: 20px;
 }
 .section-sobre .sobre .introducao .box-imagem-ideia {
   width: 60%;
@@ -404,8 +405,29 @@ a {
 .section-sobre .sobre .introducao .box-iformacoes .title, .section-sobre .sobre .introducao .box-iformacoes .subtitle {
   text-align: center;
 }
+.section-sobre .sobre .nosso-foco {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section-sobre .sobre .nosso-foco .links-itens {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section-sobre .sobre .nosso-foco .links-itens li {
+  width: 30%;
+}
+.section-sobre .sobre .nosso-foco .links-itens li .link-item {
+  display: block;
+  font-size: 0.8em;
+  padding: 7px 10px;
+  background: #00aaff;
+  color: #FFF;
+  border-radius: 5px;
+}
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 720px) {
   .section-sobre .sobre {
     margin-top: 30px;
   }
@@ -424,6 +446,9 @@ a {
   .section-sobre .sobre .introducao .box-iformacoes .title, .section-sobre .sobre .introducao .box-iformacoes .subtitle {
     width: 100%;
     text-align: left;
+  }
+  .section-sobre .sobre .nosso-foco .links-itens {
+    display: none;
   }
 }
 .section-parceiros {
