@@ -375,6 +375,9 @@ a {
   overflow: hidden;
   margin-bottom: 20px;
   box-shadow: 0 0.15em 0.5em 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(30%);
+  opacity: 0.5;
+  transition: 1s;
 }
 .section-projetos .projetos .projeto .header-projeto {
   width: 100%;
@@ -417,11 +420,11 @@ a {
 }
 .section-projetos .projetos .projeto .footer-projeto .btn-expande-footer .icon {
   color: #ccc;
-  padding: 5px;
+  padding: 8px;
   transition: 0.3;
 }
 .section-projetos .projetos .projeto .footer-projeto .infos-projeto {
-  padding: 5px;
+  padding: 8px 5px;
   padding-top: 0;
   display: flex;
   flex-direction: column;
@@ -441,7 +444,7 @@ a {
   background-color: #0af;
   font-size: 0.82em;
   color: #FFF;
-  padding: 2px 5px;
+  padding: 6px 10px;
   border-radius: 2px;
 }
 .section-projetos .projetos .projeto .footer-projeto-open .btn-expande-footer {
@@ -459,6 +462,11 @@ a {
 .section-projetos .projetos .projeto .footer-projeto-open .infos-projeto {
   height: 0;
   transition: 0.4s;
+}
+.section-projetos .projetos .projeto-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 2s;
 }
 
 @media screen and (min-width: 420px) {
@@ -702,6 +710,7 @@ a {
 .container-principal .section {
   padding: 0 10%;
   background: #fff;
+  overflow: hidden;
 }
 .container-principal .section .header-section {
   display: flex;

@@ -17,6 +17,9 @@
             overflow: hidden;
             margin-bottom: 20px;
             box-shadow: 0 0.15em 0.5em 0 rgb(0 0 0 / 10%);
+            transform: translateY(30%);
+            opacity: .5;
+            transition: 1s;
             .header-projeto{
                 width: 100%;
                 background: #efefef;
@@ -66,12 +69,12 @@
                     cursor: pointer;
                     .icon{
                         color: #ccc;
-                        padding: 5px;
+                        padding: 8px;
                         transition: .3;
                     }
                 }
                 .infos-projeto{
-                    padding: 5px;
+                    padding: 8px 5px;
                     padding-top: 0;
                     display: flex;
                     flex-direction: column;
@@ -90,7 +93,7 @@
                         background-color: #0af;
                         font-size: .82em;
                         color: #FFF;
-                        padding: 2px 5px;
+                        padding: 6px 10px;
                         border-radius: 2px;
                     }
                 }
@@ -113,6 +116,11 @@
                     transition: .4s;
                 }
             }
+        }
+        .projeto-active{
+            transform: translateY(0);
+            opacity: 1;
+            transition: 2s;
         }
     }
 }

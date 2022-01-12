@@ -51,9 +51,10 @@ function voltaTopo(posicaoScrollAtual){
     }
 
 }
-//Animação titulos sections
+//Animações que acontce com base no scroll
 
 (function(){
+    /* Titulos das sections */
     var headersSections = document.querySelectorAll('.header-section')
     var offset = window.innerHeight * 3 / 4
 
@@ -72,9 +73,30 @@ function voltaTopo(posicaoScrollAtual){
             }
         })
     }
+
+    /* Projetos */
+    var projetos = document.querySelectorAll('.projeto')
+
+    function animaProjeto(){
+        var docTop = window.scrollY
+
+        projetos.forEach(projeto=>{
+            var projetoTop = projeto.offsetTop
+            if(docTop > projetoTop - offset * .9){
+                projeto.classList.add('projeto-active')
+            }else{
+                projeto.classList.remove('projeto-active')
+            }
+        })
+    }
+
+    console.log(projetos)
+
     animaTitulo()
+    animaProjeto()
     window.addEventListener('scroll', function(){
         animaTitulo()
+        animaProjeto()
     })
 }())
 
