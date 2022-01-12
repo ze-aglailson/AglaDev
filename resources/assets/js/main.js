@@ -82,7 +82,7 @@ function voltaTopo(posicaoScrollAtual){
 
         projetos.forEach(projeto=>{
             var projetoTop = projeto.offsetTop
-            if(docTop > projetoTop - offset * .9){
+            if(docTop > projetoTop - offset * 1){
                 projeto.classList.add('projeto-active')
             }else{
                 projeto.classList.remove('projeto-active')
