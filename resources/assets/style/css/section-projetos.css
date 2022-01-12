@@ -2,5 +2,93 @@
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-projetos/fim-section-projetos;
 }
+.section-projetos .projetos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-projetos .projetos .projeto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 0.15em 0.5em 0 rgba(0, 0, 0, 0.1);
+}
+.section-projetos .projetos .projeto .header-projeto {
+  width: 100%;
+  background: #efefef;
+}
+.section-projetos .projetos .projeto .header-projeto .title-projeto {
+  text-align: center;
+  color: #444;
+  font-size: 0.9em;
+  padding: 5px;
+}
+.section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
+  height: 160px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  transform: rotate(90deg);
+}
+.section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .owl-dots .owl-dot span {
+  background-color: rgba(0, 170, 255, 0.534);
+}
+.section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .owl-dots .active span {
+  background-color: #0af;
+}
+.section-projetos .projetos .projeto .footer-projeto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section-projetos .projetos .projeto .footer-projeto .btn-expande-footer {
+  width: 100%;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.section-projetos .projetos .projeto .footer-projeto .btn-expande-footer .icon {
+  color: #ccc;
+  padding: 5px;
+}
+.section-projetos .projetos .projeto .footer-projeto .infos-projeto {
+  display: none;
+}
+
+@media screen and (min-width: 420px) {
+  .section-projetos .projetos .projeto {
+    width: 80%;
+  }
+  .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .section-projetos .projetos {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-projetos .projetos .projeto {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 980px) {
+  .section-projetos .projetos .projeto {
+    width: 32%;
+  }
+  .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
+    height: 230px;
+  }
+}
 
 /*# sourceMappingURL=section-projetos.css.map */
