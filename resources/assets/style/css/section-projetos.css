@@ -28,7 +28,7 @@
   padding: 5px;
 }
 .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
-  height: 160px;
+  height: 190px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -36,9 +36,8 @@
 }
 .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .owl-dots {
   position: absolute;
-  bottom: 20px;
-  right: 0;
-  transform: rotate(90deg);
+  bottom: 10px;
+  right: 30px;
 }
 .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .owl-dots .owl-dot span {
   background-color: rgba(0, 170, 255, 0.534);
@@ -60,9 +59,47 @@
 .section-projetos .projetos .projeto .footer-projeto .btn-expande-footer .icon {
   color: #ccc;
   padding: 5px;
+  transition: 0.3;
 }
 .section-projetos .projetos .projeto .footer-projeto .infos-projeto {
-  display: none;
+  padding: 5px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.4s;
+}
+.section-projetos .projetos .projeto .footer-projeto .infos-projeto .small-description {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.section-projetos .projetos .projeto .footer-projeto .infos-projeto .small-description p {
+  font-size: 0.9em;
+  text-align: center;
+  color: #596f81;
+}
+.section-projetos .projetos .projeto .footer-projeto .infos-projeto .link-projeto {
+  background-color: #0af;
+  font-size: 0.82em;
+  color: #FFF;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+.section-projetos .projetos .projeto .footer-projeto-open .btn-expande-footer {
+  width: 100%;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.section-projetos .projetos .projeto .footer-projeto-open .btn-expande-footer .icon {
+  color: #333;
+  padding: 5px;
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.section-projetos .projetos .projeto .footer-projeto-open .infos-projeto {
+  height: 0;
+  transition: 0.4s;
 }
 
 @media screen and (min-width: 420px) {
@@ -70,7 +107,7 @@
     width: 80%;
   }
   .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
-    height: 180px;
+    height: 200px;
   }
 }
 @media screen and (min-width: 720px) {

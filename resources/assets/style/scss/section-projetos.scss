@@ -31,7 +31,7 @@
             .box-slider-imagens{
                 .owl-carousel-projeto-imagens{
                     .item{
-                        height: 160px;
+                        height: 190px;
                         background-size: cover;
                         background-position: center center;
                         background-repeat: no-repeat;
@@ -40,9 +40,8 @@
 
                     .owl-dots{
                         position: absolute;
-                        bottom: 20px;
-                        right: 0;
-                        transform: rotate(90deg);
+                        bottom: 10px;
+                        right: 30px;
                         .owl-dot{
                             span{
                                 background-color: rgba(0, 170, 255, 0.534);
@@ -68,10 +67,50 @@
                     .icon{
                         color: #ccc;
                         padding: 5px;
+                        transition: .3;
                     }
                 }
                 .infos-projeto{
-                    display: none;
+                    padding: 5px;
+                    padding-top: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    transition: .4s;
+                    .small-description{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        p{
+                            font-size: .9em;
+                            text-align: center;
+                            color: #596f81;
+                        }
+                    }
+                    .link-projeto{
+                        background-color: #0af;
+                        font-size: .82em;
+                        color: #FFF;
+                        padding: 2px 5px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+            .footer-projeto-open{
+                .btn-expande-footer{
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    cursor: pointer;
+                    .icon{
+                        color: #333;
+                        padding: 5px;
+                        transform: rotate(180deg);
+                        transition: .3s;
+                    }
+                }
+                .infos-projeto{
+                    height: 0;
+                    transition: .4s;
                 }
             }
         }
@@ -86,7 +125,7 @@
                 .box-slider-imagens{
                     .owl-carousel-projeto-imagens{
                         .item{
-                            height: 180px;
+                            height: 200px;
                         }
                     }
                 }
