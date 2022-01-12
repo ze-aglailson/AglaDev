@@ -5,7 +5,7 @@
     grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
     grid-template-rows: 
                     [inicio-section-home] min(100vh) [fim-section-home]0px
-                    [inicio-section-sobre] auto [fim-section-sobre]30px
+                    [inicio-section-sobre] auto [fim-section-sobre]0px
                     [inicio-section-servicos] auto [fim-section-servicos]0px
                     [inicio-separador-parceiros-top] 100px [fim-separador-parceiros-top]0px
                     [inicio-section-parceiros] auto [fim-section-parceiros]0px
@@ -17,6 +17,7 @@
 
     .section{
         padding: 0 10%;
+        background: #fff;
         .header-section{
             display: flex;
             flex-direction: column;
