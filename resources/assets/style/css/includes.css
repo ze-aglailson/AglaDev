@@ -314,6 +314,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #FFF;
+  box-shadow: 0 0.15em 0.5em 0 rgba(0, 0, 0, 0.1);
   padding: 20px 12px;
   border-radius: 8px;
   margin-bottom: 30px;
@@ -483,15 +484,14 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
   .section-projetos .projetos .projeto {
     width: 32%;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 980px) {
-  .section-projetos .projetos .projeto {
-    width: 32%;
-  }
   .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
     height: 230px;
   }
@@ -710,7 +710,7 @@ a {
   grid-template-rows: [inicio-section-home] min(100vh) [fim-section-home] 0px [inicio-section-sobre] auto [fim-section-sobre] 0px [inicio-section-servicos] auto [fim-section-servicos] 0px [inicio-section-projetos] auto [fim-section-projetos] 0px [inicio-separador-parceiros-top] 100px [fim-separador-parceiros-top] 0px [inicio-section-parceiros] auto [fim-section-parceiros] 0px [inicio-separador-parceiros-bottom] 100px [fim-separador-parceiros-bottom] 0px [inicio-section-precos] min(100vh) [fim-section-precos] 0px [inicio-section-time] min(100vh) [fim-section-time] 0px [inicio-section-contato] min(100vh) [fim-section-contato] 0px;
 }
 .container-principal .section {
-  padding: 0 10%;
+  padding: 0 5%;
   background: #fff;
   overflow: hidden;
 }

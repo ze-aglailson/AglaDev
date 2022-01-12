@@ -151,8 +151,10 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
+            flex-wrap: wrap;
             .projeto{
                 width: 32%;
+                margin-bottom: 40px;
             }
         }
     }
@@ -161,7 +163,6 @@
     .section-projetos{
         .projetos{
             .projeto{
-                width: 32%;
                 .box-slider-imagens{
                     .owl-carousel-projeto-imagens{
                         .item{

@@ -125,8 +125,6 @@ function voltaTopo(posicaoScrollAtual){
         })
     }
 
-    console.log(projetos)
-
     animaTitulo()
     animaProjeto()
     window.addEventListener('scroll', function(){
