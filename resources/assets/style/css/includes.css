@@ -479,7 +479,7 @@ a {
     height: 230px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 740px) {
   .section-projetos .projetos {
     flex-direction: row;
     justify-content: space-between;
@@ -493,11 +493,11 @@ a {
 }
 @media screen and (min-width: 980px) {
   .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
-    height: 230px;
+    height: 250px;
   }
 }
 .section-precos {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-precos/fim-section-precos;
 }
 
@@ -666,12 +666,12 @@ a {
 }
 
 .section-time {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-time/fim-section-time;
 }
 
 .section-contato {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-contato/fim-section-contato;
 }
 
@@ -707,7 +707,7 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
-  grid-template-rows: [inicio-section-home] min(100vh) [fim-section-home] 0px [inicio-section-sobre] auto [fim-section-sobre] 0px [inicio-section-servicos] auto [fim-section-servicos] 0px [inicio-section-projetos] auto [fim-section-projetos] 0px [inicio-separador-parceiros-top] 100px [fim-separador-parceiros-top] 0px [inicio-section-parceiros] auto [fim-section-parceiros] 0px [inicio-separador-parceiros-bottom] 100px [fim-separador-parceiros-bottom] 0px [inicio-section-precos] min(100vh) [fim-section-precos] 0px [inicio-section-time] min(100vh) [fim-section-time] 0px [inicio-section-contato] min(100vh) [fim-section-contato] 0px;
+  grid-template-rows: [inicio-section-home] min(100vh) [fim-section-home] 0px [inicio-section-sobre] auto [fim-section-sobre] 0px [inicio-section-servicos] auto [fim-section-servicos] 0px [inicio-section-projetos] auto [fim-section-projetos] 0px [inicio-section-parceiros] auto [fim-section-parceiros] 0px [inicio-section-precos] min(100vh) [fim-section-precos] 0px [inicio-section-time] min(100vh) [fim-section-time] 0px [inicio-section-contato] min(100vh) [fim-section-contato] 0px;
 }
 .container-principal .section {
   padding: 0 5%;
@@ -771,7 +771,7 @@ a {
 
 .contente-btns-whatsapp-volta-topo {
   position: fixed;
-  right: 10px;
+  right: 0px;
   bottom: 30px;
   display: flex;
   flex-direction: column;

@@ -1,5 +1,5 @@
 .section-precos {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-precos/fim-section-precos;
 }
 

@@ -1,5 +1,5 @@
 .section-contato {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-contato/fim-section-contato;
 }
 

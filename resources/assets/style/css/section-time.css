@@ -1,5 +1,5 @@
 .section-time {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-time/fim-section-time;
 }
 

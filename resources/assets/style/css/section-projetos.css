@@ -119,7 +119,7 @@
     height: 230px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 740px) {
   .section-projetos .projetos {
     flex-direction: row;
     justify-content: space-between;
@@ -133,7 +133,7 @@
 }
 @media screen and (min-width: 980px) {
   .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
-    height: 230px;
+    height: 250px;
   }
 }
 
