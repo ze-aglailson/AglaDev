@@ -1,0 +1,6 @@
+.section-projetos {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-section-projetos/fim-section-projetos;
+}
+
+/*# sourceMappingURL=section-projetos.css.map */
