@@ -31,7 +31,7 @@
   padding: 5px;
 }
 .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
-  height: 190px;
+  height: 220px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -116,7 +116,7 @@
     width: 80%;
   }
   .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .item {
-    height: 200px;
+    height: 230px;
   }
 }
 @media screen and (min-width: 720px) {
