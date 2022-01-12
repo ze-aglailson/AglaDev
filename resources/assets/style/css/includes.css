@@ -381,7 +381,7 @@ a {
 }
 .section-projetos .projetos .projeto .header-projeto {
   width: 100%;
-  background: #efefef;
+  background: #FFF;
 }
 .section-projetos .projetos .projeto .header-projeto .title-projeto {
   text-align: center;
@@ -397,9 +397,12 @@ a {
   position: relative;
 }
 .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .owl-dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 10px;
-  right: 30px;
+  right: 0px;
 }
 .section-projetos .projetos .projeto .box-slider-imagens .owl-carousel-projeto-imagens .owl-dots .owl-dot span {
   background-color: rgba(0, 170, 255, 0.534);
@@ -411,6 +414,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .section-projetos .projetos .projeto .footer-projeto .btn-expande-footer {
   width: 100%;
@@ -421,10 +425,11 @@ a {
 .section-projetos .projetos .projeto .footer-projeto .btn-expande-footer .icon {
   color: #ccc;
   padding: 8px;
-  transition: 0.3;
+  transition: 0.3s;
 }
 .section-projetos .projetos .projeto .footer-projeto .infos-projeto {
-  padding: 8px 5px;
+  max-height: 0;
+  transition: 0.3s;
   padding-top: 0;
   display: flex;
   flex-direction: column;
@@ -440,28 +445,24 @@ a {
   text-align: center;
   color: #596f81;
 }
-.section-projetos .projetos .projeto .footer-projeto .infos-projeto .link-projeto {
+.section-projetos .projetos .projeto .footer-projeto .infos-projeto .box-link-projeto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+.section-projetos .projetos .projeto .footer-projeto .infos-projeto .box-link-projeto .link-projeto {
   background-color: #0af;
   font-size: 0.82em;
   color: #FFF;
   padding: 6px 10px;
   border-radius: 2px;
 }
-.section-projetos .projetos .projeto .footer-projeto-open .btn-expande-footer {
-  width: 100%;
-  display: block;
-  text-align: center;
-  cursor: pointer;
-}
 .section-projetos .projetos .projeto .footer-projeto-open .btn-expande-footer .icon {
   color: #333;
   padding: 5px;
   transform: rotate(180deg);
   transition: 0.3s;
-}
-.section-projetos .projetos .projeto .footer-projeto-open .infos-projeto {
-  height: 0;
-  transition: 0.4s;
 }
 .section-projetos .projetos .projeto-active {
   transform: translateY(0);
@@ -481,6 +482,7 @@ a {
   .section-projetos .projetos {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .section-projetos .projetos .projeto {
     width: 32%;

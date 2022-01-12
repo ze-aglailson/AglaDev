@@ -22,7 +22,7 @@
             transition: 1s;
             .header-projeto{
                 width: 100%;
-                background: #efefef;
+                background: #FFF;
                 .title-projeto{
                     text-align: center;
                     color: #444;
@@ -42,9 +42,12 @@
                     }
 
                     .owl-dots{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
                         position: absolute;
                         bottom: 10px;
-                        right: 30px;
+                        right: 0px;
                         .owl-dot{
                             span{
                                 background-color: rgba(0, 170, 255, 0.534);
@@ -62,6 +65,7 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                overflow: hidden;
                 .btn-expande-footer{
                     width: 100%;
                     display: block;
@@ -70,11 +74,12 @@
                     .icon{
                         color: #ccc;
                         padding: 8px;
-                        transition: .3;
+                        transition: .3s;
                     }
                 }
                 .infos-projeto{
-                    padding: 8px 5px;
+                    max-height: 0;
+                    transition: .3s;
                     padding-top: 0;
                     display: flex;
                     flex-direction: column;
@@ -89,31 +94,29 @@
                             color: #596f81;
                         }
                     }
-                    .link-projeto{
-                        background-color: #0af;
-                        font-size: .82em;
-                        color: #FFF;
-                        padding: 6px 10px;
-                        border-radius: 2px;
+                    .box-link-projeto{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding-bottom: 8px;
+                        .link-projeto{
+                            background-color: #0af;
+                            font-size: .82em;
+                            color: #FFF;
+                            padding: 6px 10px;
+                            border-radius: 2px;
+                        }
                     }
                 }
             }
             .footer-projeto-open{
                 .btn-expande-footer{
-                    width: 100%;
-                    display: block;
-                    text-align: center;
-                    cursor: pointer;
                     .icon{
                         color: #333;
                         padding: 5px;
                         transform: rotate(180deg);
                         transition: .3s;
                     }
-                }
-                .infos-projeto{
-                    height: 0;
-                    transition: .4s;
                 }
             }
         }
@@ -147,6 +150,7 @@
         .projetos{
             flex-direction: row;
             justify-content: space-between;
+            align-items: flex-start;
             .projeto{
                 width: 32%;
             }

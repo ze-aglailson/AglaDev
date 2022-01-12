@@ -3,6 +3,9 @@ window.addEventListener('load', function(){
     var alturaCabecalho = cabecalho.offsetHeight
     var posicaoScrollAtual = 0
     let gridPrincipal = document.querySelector('.container-principal')
+    var btnsExpandeInfosProjeto = document.querySelectorAll('.btn-expande-footer')
+
+    
 
     //A primeira section do grid principal deve ter um padding-top para descontar a altura do cabecalho
 
@@ -14,6 +17,13 @@ window.addEventListener('load', function(){
         e.style.paddingTop = alturaCabecalho+'px'
     })
 
+btnsExpandeInfosProjeto.forEach(btn=>{
+
+    btn.addEventListener('click', function(){
+        ExpandeInfosProjeto(btn)
+    })
+
+})
 
 //Eventos de scroll
 window.addEventListener('scroll', function(){
@@ -27,6 +37,31 @@ window.addEventListener('scroll', function(){
 
 
 //FUNÇÕES
+
+function ExpandeInfosProjeto(btn){
+    let infosProjeto = btn.nextElementSibling ? btn.nextElementSibling : false
+    let footerProjeto = infosProjeto.parentNode
+    let alturaInfosProjeto = 0
+    if(infosProjeto){
+        alturaInfosProjeto = !!infosProjeto.style.maxHeight
+    }
+    if(alturaInfosProjeto){
+        infosProjeto.style.maxHeight = null
+        footerProjeto.classList.remove('footer-projeto-open')
+    }else{
+        let infosProjetos = document.querySelectorAll('.infos-projeto') //Todos os box infos 
+        infosProjetos.forEach(info =>{
+            let alturaInfo = info.style.maxHeight
+            let footer = info.parentNode
+            if(alturaInfo){
+                info.style.maxHeight = null
+                footer.classList.remove('footer-projeto-open')
+            }
+        })
+        infosProjeto.style.maxHeight = infosProjeto.scrollHeight+'px'
+        footerProjeto.classList.add('footer-projeto-open')
+    }
+}
 
 function voltaTopo(posicaoScrollAtual){
 
@@ -100,31 +135,6 @@ function voltaTopo(posicaoScrollAtual){
     })
 }())
 
-//Animações scroll lateral section serviços
-/* (function(){
-    var servicos = document.querySelectorAll('.servico')
-    var offset = window.innerHeight * 3 /4
 
-    function animaScroll(){
-        var docTop = window.scrollY
-        servicos.forEach(function(servico, indice){
-            var boxIcon = servico.querySelector('.box-icon-servico')
-            var boxInfos = servico.querySelector('.box-infos-servico')
-            var itemTop = servico.offsetTop
-            if(docTop > itemTop - offset*1.2){
-                boxInfos.classList.add('box-infos-servico-active')
-                boxIcon.classList.add('box-icon-servico-active')
-            }else{
-                boxInfos.classList.remove('box-infos-servico-active')
-                boxIcon.classList.remove('box-icon-servico-active')
-            }
-
-        })
-    }
-    animaScroll()
-    window.addEventListener('scroll', function(){
-        animaScroll()
-    })
-}()) */
 
 })
