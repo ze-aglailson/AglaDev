@@ -566,6 +566,8 @@ a {
   margin-bottom: 20px;
 }
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item {
+  height: 100px;
+  max-height: 100px;
   width: 100%;
   display: flex;
 }
@@ -583,7 +585,6 @@ a {
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item .box-info .title {
   font-size: 1em;
   color: #0af;
-  margin-bottom: 8px;
   font-weight: normal;
 }
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco .item .box-info .subtitle {
