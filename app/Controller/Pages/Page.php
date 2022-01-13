@@ -13,7 +13,7 @@ class Page{
      * @return string
      */
     public static function getHeader($pagina){
-        return View::render('pages/header',[
+        return View::render('pages/estrutura/header',[
             'pagina'=>$pagina
         ]);
     }
@@ -123,7 +123,7 @@ class Page{
      * @return string
      */
     public static function getFooter(){
-        return View::render('pages/footer',[
+        return View::render('pages/estrutura/footer',[
             'copy'=>'AglaDev - Todos os direitos reservados - 2021&copy;'
         ]);
     }
@@ -139,7 +139,7 @@ class Page{
 
      public static function getPage($title,$pagina,$content){
 
-        return View::render('pages/page', [
+        return View::render('pages/estrutura/page', [
             'title'   =>$title,
             'header'  =>self::getHeader($pagina),
             'content' =>$content,
