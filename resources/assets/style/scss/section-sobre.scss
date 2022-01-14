@@ -71,6 +71,19 @@
                     }
                 }
             }
+            .box-title-nosso-foco{
+                margin-bottom: 30px;
+                .title{
+                    font-size: 1.1em;
+                    font-family: 'Roboto' ;
+                    color: #2e5678;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .subtitle{
+                    color: #596f81;
+                }
+            }
             .owl-carousel-nosso-foco{
                 margin-bottom: 20px;
                 box-shadow: 0 0.15em 0.5em 0 rgb(0 0 0 / 10%);
@@ -165,6 +178,11 @@
                 .links-itens{
                     display: none;
                     
+                }
+                .box-title-nosso-foco{
+ /*                    .title{
+                        text-align: left;
+                    } */
                 }
             }
             

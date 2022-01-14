@@ -146,6 +146,9 @@
 .content-menu .menu-principal .ul-items-midias li.item-midia a.icon-whatsapp {
   color: #00e676;
 }
+.content-menu .menu-principal .ul-items-midias li.item-midia a.icon-github {
+  color: #444;
+}
 
 .content-menu-aberto {
   top: 0;

@@ -169,6 +169,9 @@ a {
 .content-menu .menu-principal .ul-items-midias li.item-midia a.icon-whatsapp {
   color: #00e676;
 }
+.content-menu .menu-principal .ul-items-midias li.item-midia a.icon-github {
+  color: #444;
+}
 
 .content-menu-aberto {
   top: 0;
@@ -583,6 +586,19 @@ a {
 .section-sobre .sobre .nosso-foco .links-itens li .link-item-seguranca {
   background: #00aaff;
 }
+.section-sobre .sobre .nosso-foco .box-title-nosso-foco {
+  margin-bottom: 30px;
+}
+.section-sobre .sobre .nosso-foco .box-title-nosso-foco .title {
+  font-size: 1.1em;
+  font-family: "Roboto";
+  color: #2e5678;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-sobre .sobre .nosso-foco .box-title-nosso-foco .subtitle {
+  color: #596f81;
+}
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco {
   margin-bottom: 20px;
   box-shadow: 0 0.15em 0.5em 0 rgba(0, 0, 0, 0.1);
@@ -657,6 +673,11 @@ a {
   }
   .section-sobre .sobre .nosso-foco .links-itens {
     display: none;
+  }
+  .section-sobre .sobre .nosso-foco .box-title-nosso-foco {
+    /*                    .title{
+                           text-align: left;
+                       } */
   }
 }
 .section-parceiros {
