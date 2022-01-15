@@ -71,7 +71,7 @@
                     }
                 }
             }
-            .box-title-nosso-foco{
+            .box-titulo-subtitulo{
                 margin-bottom: 30px;
                 .title{
                     font-size: 1.1em;
@@ -178,6 +178,11 @@
                 .links-itens{
                     display: none;
                     
+                }
+                .box-titulo-subtitulo{
+                    .title{
+                        text-align: left;
+                    }
                 }
 
             }

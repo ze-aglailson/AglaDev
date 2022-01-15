@@ -69,17 +69,17 @@
 .section-sobre .sobre .nosso-foco .links-itens li .link-item-seguranca {
   background: #00aaff;
 }
-.section-sobre .sobre .nosso-foco .box-title-nosso-foco {
+.section-sobre .sobre .nosso-foco .box-titulo-subtitulo {
   margin-bottom: 30px;
 }
-.section-sobre .sobre .nosso-foco .box-title-nosso-foco .title {
+.section-sobre .sobre .nosso-foco .box-titulo-subtitulo .title {
   font-size: 1.1em;
   font-family: "Roboto";
   color: #2e5678;
   margin-bottom: 20px;
   text-align: center;
 }
-.section-sobre .sobre .nosso-foco .box-title-nosso-foco .subtitle {
+.section-sobre .sobre .nosso-foco .box-titulo-subtitulo .subtitle {
   color: #596f81;
 }
 .section-sobre .sobre .nosso-foco .owl-carousel-nosso-foco {
@@ -156,6 +156,9 @@
   }
   .section-sobre .sobre .nosso-foco .links-itens {
     display: none;
+  }
+  .section-sobre .sobre .nosso-foco .box-titulo-subtitulo .title {
+    text-align: left;
   }
 }
 
