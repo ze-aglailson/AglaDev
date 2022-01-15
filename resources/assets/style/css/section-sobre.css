@@ -2,12 +2,44 @@
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-sobre/fim-section-sobre;
   background: #FFF;
-  /*     h2.title{
-          padding-top: 30px;
-      } */
 }
 .section-sobre .sobre {
   width: 100%;
+}
+.section-sobre .sobre .sub-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.section-sobre .sobre .sub-section .column-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.section-sobre .sobre .sub-section .column-1 .box-titles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section-sobre .sobre .sub-section .column-1 .box-titles .title {
+  font-size: 1.1em;
+  font-family: "Roboto";
+  color: #2e5678;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-sobre .sobre .sub-section .column-1 .box-titles .subtitle {
+  color: #596f81;
+}
+.section-sobre .sobre .sub-section .column-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.section-sobre .sobre .sub-section .column-2 .box-imagem-ideia {
+  width: 80%;
 }
 .section-sobre .sobre .introducao {
   width: 100%;
@@ -135,30 +167,22 @@
   .section-sobre .sobre {
     margin-top: 30px;
   }
-  .section-sobre .sobre .introducao {
-    flex-direction: row-reverse;
+  .section-sobre .sobre .sub-section {
+    flex-direction: row;
   }
-  .section-sobre .sobre .introducao .box-imagem-ideia {
-    width: 30%;
-    margin: 0;
-    background: #eee;
+  .section-sobre .sobre .sub-section .column-1 .box-titles .title {
+    text-align: left;
+  }
+  .section-sobre .sobre .sub-section .column-2 {
+    width: 40%;
+  }
+  .section-sobre .sobre .sub-section .column-2 .box-imagem-ideia {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: #CCC;
     padding: 10px;
     border-radius: 10px;
-  }
-  .section-sobre .sobre .introducao .box-iformacoes {
-    align-self: flex-start;
-    flex: 1;
-    padding-right: 20px;
-  }
-  .section-sobre .sobre .introducao .box-iformacoes .title, .section-sobre .sobre .introducao .box-iformacoes .subtitle {
-    width: 100%;
-    text-align: left;
-  }
-  .section-sobre .sobre .nosso-foco .links-itens {
-    display: none;
-  }
-  .section-sobre .sobre .nosso-foco .box-titulo-subtitulo .title {
-    text-align: left;
   }
 }
 

@@ -3,11 +3,43 @@
     grid-column: inicio-left/fim-rigth;
     grid-row:inicio-section-sobre/fim-section-sobre;
     background: #FFF;
-/*     h2.title{
-        padding-top: 30px;
-    } */
     .sobre{
         width: 100%;
+        .sub-section{
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            .column-1{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                .box-titles{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .title{
+                        font-size: 1.1em;
+                        font-family: 'Roboto' ;
+                        color: #2e5678;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                    .subtitle{
+                        color: #596f81;
+                    }
+                }
+            }
+            .column-2{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+                .box-imagem-ideia{
+                    width: 80%;
+                }
+            }
+        }
         .introducao{
             width: 100%;
             display: flex;
@@ -154,39 +186,29 @@
     .section-sobre{
         .sobre{
             margin-top: 30px;
-            .introducao{
-                flex-direction: row-reverse;
-                .box-imagem-ideia{
-                    width: 30%;
-                    margin: 0;
-                    background: #eee;
-                    padding: 10px;
-                    border-radius: 10px;
+            .sub-section{
+                flex-direction: row;
+
+                .column-1{
+                    .box-titles{
+
+                        .title{
+                            text-align: left;
+                        }
+                    }
                 }
-                .box-iformacoes{
-                    align-self: flex-start;
-                    flex: 1;
-                    padding-right:20px;
-                    .title, .subtitle{
+                .column-2{
+                    width: 40%;
+                    .box-imagem-ideia{
                         width: 100%;
-                        text-align: left;
+                        display: flex;
+                        justify-content: flex-end;
+                        background: #CCC;
+                        padding: 10px;
+                        border-radius: 10px;
                     }
                 }
             }
-
-            .nosso-foco{
-                .links-itens{
-                    display: none;
-                    
-                }
-                .box-titulo-subtitulo{
-                    .title{
-                        text-align: left;
-                    }
-                }
-
-            }
-            
         }
     }
 }
