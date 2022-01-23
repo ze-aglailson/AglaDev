@@ -154,9 +154,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    background: #CCC;
-    padding: 10px;
-    border-radius: 10px;
   }
   .section-sobre .sobre .sub-section-nosso-foco .links-itens {
     display: none;
